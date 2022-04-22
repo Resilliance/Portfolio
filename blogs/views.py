@@ -16,3 +16,6 @@ def posts(request):
 
 def base(request):
     return render(request,'blogs/base.html')
+
+def recycpal(request):
+    return render(request, 'blogs/projects/recycpal.html')
