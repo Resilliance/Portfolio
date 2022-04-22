@@ -12,7 +12,7 @@
             <div class="d-flex flex-column-3 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <br>
-                    <img id="profile-pic" src="{% static 'images/face1.jpg' %}">
+                    <img id="profile-pic" class="shadow" src="{% static 'images/face1.jpg' %}">
                     <br>
                     <hr>
                     <br>
@@ -30,7 +30,7 @@
                         My engineering journey started with a 3D printer and a dream to make a prosthetic hand, from there I wanted to integrate hardware so I ended up looking into Arduino and micro controllers.
                          </p>
 
-                    <p>I learned C/C++ primarily to control motors, sensors, and LEDs with the Arduino. Through all the headaches that come wih learning programming, I felt a sense of fulfillment that was new to me.
+                    <p>I learned C/C++ primarily to control motors, sensors, and LEDs with the Arduino. Through all the headaches that come with learning programming, I felt a sense of fulfillment that was new to me.
                         One project led to another, and I found myself meeting friends that loved programming and building projects as much as I did and I started to pick up Python, Django, Swift, Java, etc.
                         Now I'm getting to a point where I have the confidence that I can build this website by myself and show off my code on GitHub!
                     </p>
@@ -58,7 +58,7 @@
                     <hr>
                     <a class="btn btn-success" href="{% url 'projects'%}" role="button">RecycPal (AI Recycling App)</a>
                     <br>
-                    <a class="btn btn-secondary" href="{% url 'base'%}" role="button">PharmEasy (Pharmacy System Software)</a>
+                    <a class="btn btn-secondary" href="{% url 'projects'%}" role="button">PharmEasy (Pharmacy System Software)</a>
                     <br>
                     <a class="btn btn-primary" href="projects" role="button">Volleyball Counter</a>
                     <br>
