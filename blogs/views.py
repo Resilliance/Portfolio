@@ -13,3 +13,6 @@ def projects(request):
 
 def posts(request):
     return render(request,'blogs/posts.html')
+
+def base(request):
+    return render(request,'blogs/base.html')
