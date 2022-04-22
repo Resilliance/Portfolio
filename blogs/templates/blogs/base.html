@@ -6,10 +6,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- Start of NavBar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand" href="{% url 'home'%}">
+                <img src="{% static 'images/JKELogo.png' %}" width="50" height="50" alt="">
+              </a>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
@@ -17,11 +16,11 @@
                   <a class="nav-link" href="{% url 'home'%}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="{% url 'projects'%}">Projects</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
@@ -31,7 +30,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
+                  <a class="nav-link" href="https://github.com/Resilliance">GitHub</a>
                 </li>
               </ul>
             </div>
