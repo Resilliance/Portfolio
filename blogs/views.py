@@ -19,3 +19,18 @@ def base(request):
 
 def recycpal(request):
     return render(request, 'blogs/projects/recycpal.html')
+
+def pharmeasy(request):
+    return render(request, 'blogs/projects/pharmeasy.html')
+
+def valleyball(request):
+    return render(request, 'blogs/projects/valleyball.html')
+
+def mycelium(request):
+    return render(request, 'blogs/projects/mycelium.html')
+
+def enterreality(request):
+    return render(request, 'blogs/projects/enterreality.html')
+
+def soildrencher(request):
+    return render(request, 'blogs/projects/soildr.html')

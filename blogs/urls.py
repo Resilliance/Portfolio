@@ -15,5 +15,10 @@ urlpatterns = [
     # Project Webpages
     
     path('projects/recycpal/', views.recycpal, name='recycpal'),
+    path('projects/pharmeasy/', views.pharmeasy, name='pharmeasy'),
+    path('projects/valleyball/', views.valleyball, name='valleyball'),
+    path('projects/mycelium/', views.mycelium, name='mycelium'),
+    path('projects/enterreality/', views.enterreality, name='enterreality'),
+    path('projects/soildrencher/', views.soildrencher, name='soildrencher'),
 
 ]
