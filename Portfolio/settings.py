@@ -29,7 +29,8 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     'jkeportfolio.herokuapp.com',
     'justinke.com',
-    '127.0.0.1', 
+    '127.0.0.1',
+    'justinke.dev',
 ]
 
 

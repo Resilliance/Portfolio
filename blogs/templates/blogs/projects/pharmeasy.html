@@ -9,23 +9,90 @@
         <h1 class="text-center">PharmEasy</h1>
         <hr>
         <blockquote class="blockquote text-center">
-            <p class="mb-0">The best way to get control of the garbage problem is to not make so much of it – we all need to reduce the amount of stuff we throw away.</p>
-            <footer class="blockquote-footer">Bill Nye</footer>
+            <p class="mb-0">We work hard, so you PharmEasy.</p>
+            <footer class="blockquote-footer">Justin Esguerra</footer>
         </blockquote>
         <hr>
         <br>
         <div class="d-flex flex-row">
             <div class="d-flex flex-column-3">
-                <p class="fs-1">I'm baby chartreuse YOLO gastropub polaroid chicharrones farm-to-table pinterest XOXO fam fashion axe master
-                     cleanse flannel helvetica four dollar toast hoodie. Yr fixie fanny pack chicharrones bitters literally disrupt
-                      woke la croix vegan kinfolk. Lyft hexagon thundercats kombucha tumeric keytar distillery glossier next level
-                       readymade neutra you probably haven't heard of them. Mustache tousled truffaut post-ironic, typewriter green
-                        juice coloring book chia ugh ethical.
+                <p>PharmEasy was created because of the software shortcomings I observed as a retail pharmacy technician.
+                     These shortcomings include but are not limited to…
+                </p>
+                
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="d-flex flex-column-3">
+                <ul>
+                    <li> Failure to receive e-prescriptions from hospitals/medical offices </li>
+                    <li> Miscommunications between the mobile app and the computer application
+                         (resulted in the following failures)</li>
+                    <ul>
+                        <li class="square">Unsynchronized Online Pay</li>
+                        <li class="square">Failed Medication Refills</li>
+                        <li class="square">Unrecorded Vaccine Appointments</li>
+                    </ul>
+                    <li>Patient’s lack of control over their health information on the mobile app</li>
+                    <ul>
+                        <li class="square">Insurance Eligibility Information</li>
+                        <li class="square">Mailing Address</li>
+                        <li class="square">Allergies</li>
+                        <li class="square">Health Conditions</li>
+                        <li class="square">Phone Number</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="d-flex flex-column-3">
+                <p>Having this all in mind, I attempted to program a proof of concept in Python
+                     when I first began programming, unaware of the vastness of the endeavor.
+                      The prototype amounted to little, but allowed me to get my hands dirty in actually trying
+                       to make a console application.
                 </p>
             </div>
+        </div>
+        <br>
+        <div class="d-flex flex-row">
+            <div class"d-flex flex-column-3">
+                <p>In 2021, my friends and I participated in KnightHacks. This was a year after the inception
+                     of the pharmacy idea, and at the start of the hackathon PharmEasy was officially born. 
+                </p>
+                <p>In the 36 hours that we had, we were able to design most of the user interface, 
+                    the login screen, some components, and a half finished user authentication. 
+                    Due to my lack of skill at the time I was primarily in charge of the mockups and the video presentation.
+                    Miraculously through our efforts we won a sponsored prize at the competition.
+                </p>
+            </div>
+            <div class="d-flex flex-column">
+                <img src="{% static 'images/peiosmockup.jpeg'%}" class="rounded pl-3" width="500" height=auto max-height="400">
+            </div>
+        </div>
+        <br>
+        <div class="d-flex flex-column">
+            <img class="rounded image-center" src="{% static 'images/pepatientlookup.gif'%}" width="1100">
 
         </div>
+        <br>
+        <div class="d-flex flex-column">
+            <p> However, after the hackathon I began working on the database.
+                I installed PostgreSQL and started learning about databases, ERD’s, queries and SQL.
+                 At the writing of this article, I’ve only gotten so far as to normalize the database to the third normal
+                  form (3nf). Despite that I have yet to deploy the database or connect it to the user authentication nor 
+                  the front end.
+           </p> 
+           <p>PharmEasy has regressed back into the planning stage, however I believe that is for the better.
+                I have come to realize that a software as complex as a pharmacy management system is not something that
+                 can be rushed to production. 
+           </p>
+           <p>Rushing, just like in healthcare, leads to errors. Preventing those mistakes by taking the 
+               time necessary to plan, prototype, and learn. Is the correct decision.
+           </p>
         
+        </div>
+           <p>I’ll keep working hard and maybe someday, pharmacies and patients alike can PharmEasy.</p>
+        <br>
     </body>
 </div>
 {% endblock content%}

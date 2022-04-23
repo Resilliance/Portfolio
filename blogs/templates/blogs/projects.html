@@ -5,10 +5,11 @@
 
 <body>
     <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    
     <br>
     <div class="container">
         <div class="d-flex flex-row">
-            <div class="d-flex flex-column-4 pr-3">
+            <div class="col-md-4 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <img id="profile-pic" class="shadow" src="{% static 'images/recycpal.png'%}">
                     <hr>
@@ -20,7 +21,7 @@
                 </div>
                 
             </div>
-            <div class="d-flex flex-column-4 pl-3 pr-3">
+            <div class="col-md-4 pl-3 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <img id="profile-pic" class="shadow" src="{% static 'images/PharmEasy.svg'%}">
                     <hr>
@@ -31,7 +32,7 @@
                 </div>
                 
             </div>
-            <div class="d-flex flex-column-4 pl-3">
+            <div class="col-md-4 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <img id="profile-pic" class="shadow" src="{% static 'images/volley.png'%}">
                     <hr>
@@ -45,29 +46,29 @@
         </div>
         <br>
         <div class="d-flex flex-row">
-            <div class="d-flex flex-column-4 pr-3">
+            <div class="col-md-4 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <img id="profile-pic" class="shadow" src="{% static 'images/mmTest.png'%}" width="750" height="719">
                     <hr>
                     <h4>Mycelium Mania</h4>
                     <p>Environment Monitoring and Material Science</p>
-                    <p>I love coding so much that I eat, breath, and sleep development.</p>
+                    <p>An attempt to grow and create a biomaterial replacement to cardboard.</p>
                     <a href="{% url 'mycelium' %}" class="stretched-link"></a>
                 </div>
                 
             </div>
-            <div class="d-flex flex-column-4 pl-3 pr-3">
+            <div class="col-md-4 pl-3 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <img id="profile-pic" class="shadow" src="{% static 'images/matrix.jpeg'%}">
                     <hr>
                     <h4>EnterReality</h4>
                     <p>Test Based Adventure Game</p>
-                    <p>I love coding so much that I eat, breath, and sleep development.</p>
+                    <p>Initially made for an interview, but now becoming a full game!</p>
                     <a href="{% url 'enterreality' %}" class="stretched-link"></a>
                 </div>
                 
             </div>
-            <div class="d-flex flex-column-4 pl-3">
+            <div class="col-md-4 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <img id="profile-pic" class="shadow" src="{% static 'images/SoilDr.svg'%}">
                     <hr>
