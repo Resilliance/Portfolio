@@ -9,24 +9,97 @@
         <h1 class="text-center">ValleyBall</h1>
         <hr>
         <blockquote class="blockquote text-center">
-            <p class="mb-0">The best way to get control of the garbage problem is to not make so much of it – we all need to reduce the amount of stuff we throw away.</p>
-            <footer class="blockquote-footer">Bill Nye</footer>
+            <p class="mb-0">The future belongs to those who believe in the beauty of their dreams.</p>
+            <footer class="blockquote-footer">Shoyo Hinata <cite title="Source Title">Haikyuu!!</cite></footer>
         </blockquote>
         <hr>
         <br>
+        <p class="small"><strong>Project timeline: 8/29/21 - 9/15/21</strong></p>
         <div class="d-flex flex-row">
             <div class="d-flex flex-column-3">
-                <p class="fs-1">I'm baby chartreuse YOLO gastropub polaroid chicharrones farm-to-table pinterest XOXO fam fashion axe master
-                     cleanse flannel helvetica four dollar toast hoodie. Yr fixie fanny pack chicharrones bitters literally disrupt
-                      woke la croix vegan kinfolk. Lyft hexagon thundercats kombucha tumeric keytar distillery glossier next level
-                       readymade neutra you probably haven't heard of them. Mustache tousled truffaut post-ironic, typewriter green
-                        juice coloring book chia ugh ethical.
+                <p>
+                    ValleyBall was an idea made by my older cousin because his daughter 
+                    plays volleyball. I was tasked to see if I could make a proof
+                     of concept for the product. Only knowing so little about engineering at the
+                      time and only ever tinkering with Arduino’s up until this point, I set out to see 
+                      if it was already made online. 
+                      <br>
+                      <br>
+                      The objective of this project was to help my niece keep count of how many 
+                      times she bounces the ball off of the wall during her ‘setter’ drills. I had 
+                      to take into consideration multiple variables like point(s) of contact,
+                       minimum force required, maximum force required, packaging the electronics 
+                       into the build, what electronics to use, etc. Obviously there’s a lot of 
+                       thought that goes into making/building anything, so threw all those worries 
+                       to the side and started programming a simple hardware button. 
                 </p>
+           
             </div>
 
             <div class="col-md-6 pl-3">
-                <img src="{% static '/images/rp-nd.png'%}" class="rounded float-left" width="260" height="562">
-                <img src="{% static '/images/rp-pd.png'%}" class="rounded float-right" width="260" height="562">
+                <img src="{% static 'images/valleyball.JPG'%}" class="img-fluid" alt="Responsive image" >
+            </div>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row">
+                <h4>Multiple Contact Point Issue</h4>
+            </div>
+            <div class="d-flex flex-row">
+                <p>
+                The original sensor I made was essentially a button made out of 3 inch cardboard
+                squares with aluminum on one side of each one, and every time they
+                touched it would complete the circuit, adding "1" to the counter.
+                <br>
+                <br>
+                This is when I ran into my first issue, "multiple contact points". Every time
+                I would touch the aluminum pieces together the counter rapidly count anywhere from 1-10.
+                After a good 30 minutes of figuring out it was a hardware issue, I quickly took to amazon to look for buttons.
+                Fortunately for me, I'm into keyboards and thought of using the spare keyboard switches
+                I had as buttons! (Actually worked out after I figured out how to wire them in parallel)
+                
+            </div>
+            <div class="d-flex flex-row">
+                <h4>Asynchronous Issue</h4>
+            </div>
+            <div class="d-flex flex-row">
+                <p>
+                    I definitely got some gray hairs from this, because the issue 
+                    now is that I had multiple keyboard switches acting as buttons to keep count
+                    of the ball pressing against the plate. Now every time EACH button was
+                    pressed it would be counted at the same time. For example, if the ball only bounced off of the
+                    target plate once and the plate pressed down on all 5 swtiches, the count would be 5
+                    instead of 1. 
+                <br>
+                <br>
+                    Thank the heavens for having friends because my Google searches and
+                    forum diving were not helping. My friend Denielle told me what the issue could
+                    be and turned out the key word <em>"asynchronous"</em> was all that I was missing.
+                    I learned that all my code was lacking was a debounce delay.
+                    <strong>Debouncing</strong> makes sure that only a single signal is
+                    accounted for, for a single opening/closing of a circuit.
+                <br>
+                <br>
+                    After a decent amount of testing, I was able to close in on an optimal
+                    debounce delay of <strong>50 milli-seconds</strong>. This was enough time
+                    for the ball to press one to all of the switches, bounce away, and for the switches
+                    to bounce back before they were pressed another time. 
+                </p>
+            </div>
+            <div class="d-flex flex-row">
+                <h4>Conclusion</h4>
+            </div>
+            <div class="d-flex flex-row">
+                <p>
+                    Unfortunately, by the time I finished making a prototype out of cardboard, hot glued PCBs, and 
+                    keyboard switches.
+                    My cousin had lost interest in the project. Seeing how my motivation was
+                    based on how interested he was, I decided to drop the project. 
+                    <br>
+                    <br>
+                    Hopefully one day I can come back to this, because I felt as if this was
+                    my first real taste of engineering, and this is where my curiosity started to
+                    take root. 
+                </p>
             </div>
         </div>
         

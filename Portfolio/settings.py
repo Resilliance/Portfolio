@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     'justinke.com',
     '127.0.0.1',
     'justinke.dev',
+    'localhost:8000',
 ]
 
 
