@@ -1,0 +1,12 @@
+name: jkeport
+region: nyc
+static_sites:
+- environment_slug: python
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: Resilliance/Portfolio
+  name: portfolio
+  routes:
+  - path: /
+  source_dir: /
