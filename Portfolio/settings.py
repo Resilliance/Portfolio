@@ -126,6 +126,8 @@ USE_TZ = True
 STATIC_URL = '/staticfiles/'
 MEDIA_URL = '/images/'
 
+STATIC_ROOT = '/Users/justinesguerra/Documents/Code/Python/PortfolioWebsite/Portfolio/staticfiles'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles')
 ]
