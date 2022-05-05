@@ -15,24 +15,68 @@
         <hr>
         <br>
 
-
-        <div>
-    
-            <h4>Humble Beginnings</h4>
-            <hr>
-
+        <div class="d-flex flex-row">
+            <h4>Hackathon: <em>Humble Beginnings</em></h4>
+            <br>
+        </div>
+        <div class="d-flex flex-row">
             <p>
+                <br>
                 RecycPal started as a hackathon project for the DeltaHacks 8, and is slowly evolving from a personal project into a 
-                real commercial AIaaS (Artificial Intelligence as a Service).
+                real commercial AIaaS (Artificial Intelligence as a Service). 
             </p>
+        </div>
 
+        <div class="d-flex flex-row">
+            <p>
+                The first rendition was a image classifier for recyclable materials that we made in 36 hours. I was primarily in charge
+                training the AI and connecting it to our iOS application. Initially, my teammates and I wanted to use PyTorch, an open source
+                machine learning framework developed by Facebook(Meta), however we quickly figured out that there was no way we were going to 
+                learn and figure out how to train, develop and deploy an app with it within the time frame. We did what great scientist like what 
+                all great engineers do, and we pivoted to a different framework. Specifically we pivoted into Apple's machine learning framework,
+                CreateML. Seeing how <em>seemingly</em> easy it was to implement and the amount of documentation and examples we decided to run with it. 
+                <br>
+                <br>
+                Training the image classifier was actually really easy, CreateML was pretty intuitive and the only thing we had to really worry
+                about was how to format the folder structure and finding all the images for training. We were fine for the most part, until it came down
+                for me to implement the model into the application.
+                
+            </p>
+            <img src="{% static '/images/rp-nd.png'%}" class="rounded float-right pl-1 shadow" width="25%" height="25%">
+            <img src="{% static '/images/rp-pd.png'%}" class="rounded float-right pl-1 shadow" width="25%" height="25%">
             
         </div>
-        <div class="col-md-6 pl-3">
-            <img src="{% static '/images/rp-nd.png'%}" class="rounded float-left" width="260" height="562">
-            <img src="{% static '/images/rp-pd.png'%}" class="rounded float-right" width="260" height="562">
+        <div class="d-flex flex-row">
+            <h4>Hackathon: <em>Implementation Issues</em></h4>
+            <br>
         </div>
-        
+        <div class="d-flex flex-row">
+            <p>
+                <br>
+                What I thought were good examples and a plethora of documentation turned out to be outdated. All of the documents and tutorials I found were ultimately useless,
+                and I had never really come across the issue of 'outdated documentation'. I spent 5 hours trying to initalize our model, reading through more documentation,
+                scouring GitHub for examples, and even going on the Chinese search engine Baidu to see if I could find anything that could help. My teammate and I 
+                put our collective brains together to figure out the issue and after another our of effort we were able to initialize our model and even connect it to our camera view.
+                Which is where the AI would update the label and tell the user what recyclable material is being seen. 
+                <br>
+                <br>
+                We finished, uploaded on GitHub, and submitted. Spectacularly, we ended up in 3rd place!! However, that was only the first step 
+                for RecycPal. Our initial vision was to make RecycPal a object detection artificial intelligence, not an image classifier. Riding the
+                waves of dopamine after our victory, I began the groundwork for our new AI. 
+            </p>
+        </div>
+        <br>
+        <div class="d-flex flex-row">
+            <h4>PyTorch/YOLOv5</h4>
+            <br>
+        </div>
+        <div class="d-flex flex-row">
+            <p>
+                <br>
+                I started reading the PyTorch documentation and 
+            </p>
+        </div>
+   
     </body>
 </div>
 {% endblock content%}
