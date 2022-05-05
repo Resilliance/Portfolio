@@ -16,7 +16,7 @@
         <br>
 
         <div class="d-flex flex-row">
-            <h4>Hackathon: <em>Humble Beginnings</em></h4>
+            <h4><strong>Hackathon:</strong> <em>Humble Beginnings</em></h4>
             <br>
         </div>
         <div class="d-flex flex-row">
@@ -47,7 +47,7 @@
             
         </div>
         <div class="d-flex flex-row">
-            <h4>Hackathon: <em>Implementation Issues</em></h4>
+            <h4><strong>Hackathon:</strong> <em>Implementation Issues</em></h4>
             <br>
         </div>
         <div class="d-flex flex-row">
@@ -67,13 +67,100 @@
         </div>
         <br>
         <div class="d-flex flex-row">
-            <h4>PyTorch/YOLOv5</h4>
+            <h4><strong>The Journey:</strong> <em>Choosing the Framework</em></h4>
             <br>
         </div>
         <div class="d-flex flex-row">
             <p>
                 <br>
-                I started reading the PyTorch documentation and 
+                Initially I tried using CreateML's object detection model, because
+                training was easy and required zero code. I ended up training the first <strong> four versions </strong>
+                of RecycPal on CreateML. This was done by using IBM's Cloud Annotation software to do all of the labelling.
+                Now that annotating and training were done, I figured it was time to deploy a prototype. Now using the model in an iOS application
+                proved to be insanely difficult because I had no updated documentation, and any YouTube video that was uploaded prior to 
+                iOS 15 was of no help anymore. The last nail in the coffin was when I wasn't able to easily control the confidence threshold, this
+                was when I finally decided to look into PyTorch again. 
+                <br>
+                <br>
+                Going in with no AI experience I knew PyTorch's learning curve was going to be challenging. Just like any normal developer, I looked to their
+                documentation, and YouTube tutorials. The first problem to tackle was to learn how to properly annotate images, and of course it sounds simple
+                at first. However, the amount of work and nuance that goes into vetting the dataset, pre-processing, and balancing classes was something that no 
+                tutorial prepared me for. This whole process of learning how to decently prepare an object detection dataset took a good month to consolidate.
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="d-flex flex-row">
+            <h4><strong>The Journey:</strong> <em>Training Montage</em></h4>
+            <br>
+        </div>
+        <div class="d-flex flex-row">
+            <p>
+                <br>
+                The only way I learned how to properly prepare the dataset, was to also train the model. Before the actual training, I had to annotate
+                which were done in RoboFlow, because I was able to format my dataset to match the new YOLOv5 file structure and label map.  I figured out through YouTube tutorials
+                that I could train my models on Google Colab using their free GPU. That being said, RecycPal versions 5 through 8 were <strong>unrecyclable</strong>, pun intended.
+                They were garbage and couldn't detect anything, because I preprocessed my dataset by changing hues, saturations, too much noise/grain, etc.
+                This basically trained the AI to see things that were never even going to be used in a real world application, hence why it's performance was so inaccurate.
+                <br>
+                <br>
+                Discouraged yes, but with my heart ablaze I wasn't going to take these failures sitting down. I discarded my old dataset, and started anew.
+                Thrusting RecycPal into a new era with versions 9 through 17 (Latest version at the time of writing).
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="d-flex flex-row">
+            <h4><strong>The Journey:</strong> <em>Graphics Card vs Google Colab</em></h4>
+            <br>
+        </div>
+        <div class="d-flex flex-row">
+            <p>
+                <br>
+                Versions 9-16 were actually done on my Linux laptop because the free Google Colab GPUs were just moving too slow, and I wasn't lucky enough to get a Tesla T4
+                on a weekday. Cloning the git, training, recording with <em>wandb.ai</em> (Weight and Biases), and running inferences. I was able
+                to maximize on my gaming laptop's GPU (RTX 2060 Max Q), and with all these experiments I was able to fine tune the dataset even more. Finding out that to add a new item at RecycPal's current scale 
+                only requires about 40 images. These images, require different lighting, lighting temperatures, angles, backgrounds, depth, etc. and by using some rotation, brightness, and 
+                flip image processing I'm able to increase those initial 40 images to 120 images per class/item. 
+                <br>
+                <br>
+                This system has now allowed RecycPal to begin blossoming and to accurately identify 16 different recyclable items, ranging from Crushed Zephyrhills Bottles to Arizona Cans.
+                I took notice that as the datatset grew larger the training time slowly went from 45 minutes to 114 minutes (version 16). Monitoring my graphics card's temperature
+                it began pushing up to 95C and I was starting to get concered about it's life span. This is when I bought <strong>Google Colab Pro</strong>.
+                This would guarantee me a P100 or Tesla T4 every time I trained my models, which both clocked faster than my GPU, and also had 16GB of RAM (10GB more than mine).
+                <br>
+                <br>
+            </p>
+        </div>
+        <div class="d-flex flex-row">
+            <h4><strong>The Journey:</strong> <em>Where Are We Now? Where Are We Going?</em></h4>
+            <br>
+        </div>
+        <div class="d-flex flex-row">
+            <p>
+                <br>
+                RecycPal is currently at version 17, and focus has shifted from training the AI to <strong>deployment</strong>. Work on deploying a web application (Django), iOS application,
+                and on IoT devices (ESP32) have already begun. 
+                <br>
+                <br>
+                The web application is going to require an API to be able to process the user uploaded images and eventually a live video using OpenCV.
+                I am currently looking into using<strong>Syndicai</strong>, a low-code MLOps platform, as our API, however I am still running into some model initalizaztion errors. Using TorchServe 
+                or making an API are still in the realm of possibilities.
+                <br>
+                <br>
+                The iOS application options are still being explored. Using a YOLOv5 model straight into Swift isn't an option yet, but using the old YOLOv2 framwork in CreateML is still a strong possibility.
+                The only thing holding the application back is the lack of updated documentation, or my lack of ability to find the updated documentation. Even if that doesn't work, 
+                we're still not dead in the water yet, because <em>Turi Create</em>, an open source Python library made by Apple, is also in the cards for deployment.
+                <br>
+                <br>
+                Deploying on IoT devices, refers to microcontrollers (MCUs) and microprocessors, such as Arduinos, ESP32/8266, STM32s, and Raspberry Pies.
+                Integration into these devices will require MicroPython and TinyML, and the reason for deployment on these devices are to eventually help the 
+                global effort of cleaning up pollution in the oceans and assisting local waste management facilities in optimizing the separation of recyclables.
+                <br>
+                <br>
+                Hopefully, by the time I revisit this article I'll be able to document the journy of how I overcame these deployment issues. 👏🏽
+                <br>
+                <br>
             </p>
         </div>
    
