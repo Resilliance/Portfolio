@@ -57,19 +57,23 @@
         <div class="d-flex flex-row">
             <div class="d-flex flex-column-6 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded border-info h-100">
+                    <style>
+                        .grow { transition: all .2s ease-in-out; }
+                        .grow:hover { transform: scale(1.1); }
+                    </style>
                     <h4>Experience/Projects 👨🏻‍💻</h4>
                     <hr>
-                    <a class="btn btn-success" href="{% url 'recycpal'%}" role="button">RecycPal (AI Recycling App)</a>
+                    <a class="btn btn-success grow shadow" href="{% url 'recycpal'%}" role="button">RecycPal (AI Recycling App)</a>
                     <br>
-                    <a class="btn btn-secondary" href="{% url 'pharmeasy'%}" role="button">PharmEasy (Pharmacy System Software)</a>
+                    <a class="btn btn-secondary grow shadow" href="{% url 'pharmeasy'%}" role="button">PharmEasy (Pharmacy System Software)</a>
                     <br>
-                    <a class="btn btn-primary" href="{% url 'valleyball'%}" role="button">Volleyball Counter</a>
+                    <a class="btn btn-primary grow shadow" href="{% url 'valleyball'%}" role="button">Volleyball Counter</a>
                     <br>
-                    <a class="btn btn-danger" href="#" role="button">Mycelium Mania (Material Engineering)</a>
+                    <a class="btn btn-danger grow shadow" href="#" role="button">Mycelium Mania (Material Engineering)</a>
                     <br>
-                    <a class="btn btn-warning" href="#" role="button">EnterReality (Text Based Adventure Game)</a>
+                    <a class="btn btn-warning grow shadow" href="#" role="button">EnterReality (Text Based Adventure Game)</a>
                     <br>
-                    <a class="btn btn-info" href="{% url 'soildrencher'%}" role="button">Soil Drencher (Automated Plant Watering)</a>
+                    <a class="btn btn-info grow shadow" href="{% url 'soildrencher'%}" role="button">Soil Drencher (Automated Plant Watering)</a>
                 </div>
             </div>
 
