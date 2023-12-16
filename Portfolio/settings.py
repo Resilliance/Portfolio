@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
+    '5.161.53.134'
     'jkeportfolio.herokuapp.com',
     'justinke.com',
     '127.0.0.1',
