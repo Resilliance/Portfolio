@@ -9,39 +9,45 @@
     
     <div class="container">
         <div class="d-flex flex-row">
-            <div class="d-flex flex-column-3 pr-3">
+            <div class="d-flex flex-column-4 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success" id="profile-wrapper">
                     <br>
-                    <img id="profile-pic" class="shadow" src="{% static 'images/face1.jpg' %}">
+                    <img id="profile-pic"  class="shadow" src="{% static 'images/face1.jpg' %}">
                     <br>
                     <hr>
                     <br>
                     <h4><strong>Hey there, I'm Justin!</strong></h4>
-                    <p>I love coding so much that I eat, breath, and sleep development.</p>                    
+					<p>I program things and those things help people...I think</p>                    
                 </div>
             </div>
 
             <div class="d-flex flex-column-9 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success">
-                    <h4>What am I up to now?</h4>
+                    <h4>New phone who dis?</h4>
                     <hr>
                     <p>
-                        After my arduous search to get my foot in the door of software engineering, I finally landed my dream at Captivea, an international multi-branched 
-                        ERP Implementation company. Since starting back in May 2021, I've been doing some amazing work for our ITAR clients in Energy and Aerospace! Everyday is
-                        an adventure, and I've been given the space to spread my wings and learn as much as I can about business processes, DevOps, QA, and the Odoo framework (which is surprisngly similar to Django).
+					I build custom Odoo solutions professionally, and I'm an audacious dreamer in my free time. I'm a self-taught developer, and I've been programming for about 2 years now. I currently work with a consulting firm, Captivea, as an <strong>Odoo developer</strong> and <strong>Team Manager</strong>.
                     </p>
                     <br>
-                    <h4>What have I learned?</h4>
-                    <hr>
-                    <p>
-                        Captivea works at a break neck pace, it feels like we are perpetually a start-up with how much work we have to deliver with such tight deadlines. With that stress, I've been able to expedite my learning
-                        in Python, MVC, deploying on Linux servers, SQL scripting, developing modules and so much more! Listing everything I've learned would take up over 100 lines of code in HTML, and I'd rather not bore you with the details 😅 
-                    </p>
-
+					<h4>Absolutely <strong>Cracked</strong> (Skills)</h4>
+					<div class="row" >
+						<img style="width:75px;height:75px;" src="{% static 'images/git_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/docker_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/postgres_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/python_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/neovim_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/js_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/html_icon.png' %}"/>
+						<img style="width:75px;height:75px;" src="{% static 'images/css_icon.png' %}"/>
+					</div>
+					<hr>
 
                     <ul class="social-links">
                         <a href="https://www.linkedin.com/in/justin-kieran-esguerra/">
                         <li><img class="social" src="{% static 'images/linkedin.jpg' %}"</li>
+                        </a>
+                        <a href="https://github.com/captivea-jeu">
+                        <li><img class="social" src="{% static 'images/Github.jpeg' %}"</li>
                         </a>
                         <a href="https://www.youtube.com/channel/UCnKYLCq2DxxRLo6fjWJVQlg">
                         <li><img class="social" src="{% static 'images/youtube.jpg' %}"</li>
@@ -79,22 +85,21 @@
 
             <div class="d-flex flex-column-6 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded border-warning h-100">
-                    <h4>What Can I Do 🤔 (My professional Achievements)</h4> 
+					<h4>But how <strong>E P I C</strong> are you?</h4> 
                     <hr>
-                    <p>Developed/Optimized an application to remap 110k Products (Initial runtime: ~36 hours; Optimized runtime: ~5 minutes)</p>
-                    <p>Migrated relational databases with DBeaver</p>
-                    <p>Developed a <strong>MASSIVE</strong> application that faciliates the Product Lifecycle Management workflow</p>
-                    <p>Integrated an Approval hierachy: Approvers are assigned based on multiple variables, notified assigned approvers through email and in app activites</p>
-                    <p>Data Clean-up: pulled revisional data from excel sheets with pandas and populated a SQL script</p>
-                    <p>Developed an application, that extends functionality of Odoo's website module: Allows for vendors to
-                        interact, send files (schematics, videos, blueprints), and submit tickets to the internal business users
-                    </p>
-                    <p>
-                        Customizing a procurement workflow to implement an approval hierarchy, approvals for purchase orders/vendor bills (invoices), and implementing specific 2-way and 3-way match scenario exceptions 
-                    </p>
-                    <p>
-                        Unofficially take on a leadership role as a 'Senior Developer' to mentor my juniors in hopes that they'll become better than me in there time here at Captivea 😌
-                    </p>
+					<p>My mom says I'm pretty epic, but I think she's a little bias. So here's some things not on my resume that I've done.</p>
+					<p>
+					Integrating C++ into Odoo via custom modules to handle the processing of large data sets. 
+					</p>
+					<p>
+					Implement Odoo's tours to <strong>automate testing</strong> for python code/business logic and UI/UX.
+					</p>
+					<p>
+					Deliver internal talks about deployment of Odoo on docker containers and how to manage multiple docker containers within a given server.
+					</p>
+					<p>
+					Navigate a large codebase to efficiently debug, fix issues, and <strong>bend the software to the client's will.</strong>
+					</p>
                 </div>
             </div>
 
@@ -105,18 +110,12 @@
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded border-danger h-100">
                     <h4>What am I currently working on 🤓</h4>
                     <hr>
-                    <p>
-                        There's a few things honestly, but I've found myself paralyzed between choosing to learn iOS development, .NET Balzor WASM, or continuing my pursuit in the Django framework.
-                        Each choice has an avenue of growth, but I find that I suffer from perpetually looking for the feeling of exploration and discovery.                    
-                    </p>
-                    <p> 
-                        If iOS I plan on reviving my old AI project (Recycpal) in light of 
-                        recent release of Meta's <a href="https://segment-anything.com" target="_blank">Segment Anything</a>, and complement
-                        it with a webapp (.NET or Django).
-                    </p>
-                    <p>
-                        However, I have been designing a database for my girlfriends ecommerce website, epecially recently since we finished wireframing the UI MVP.
-                    </p>
+					<p>
+					When I'm not drowning in work, I try to work on defining my business model for my freshly formed LLC, Napkin Software.
+					</p>
+					<p>
+					I'm also trying to learn more about C++, Rust, and VR for game development, but honestly there's just not enough hours in the day to do everything!
+					</p>
                 </div>
             </div>
 
@@ -125,15 +124,11 @@
                     <h4>Short Term Goals 🐰</h4>
                     <hr>
                     <p>
-                        Learn more, learn everything, and learn anything. I've learned that every experience that I had in all my other professions have prepared me for the roller coaster that is Captivea.
-                    </p>
-                    <p>
                         Be happier 😌 I'm getting older and so is everyone else in my life, no matter how busy I get I want to prioritize those moments before the people that matter to me leave this 
                         world we call home. 
                     </p>
                     <p>
-                        Stress less, and feel blessed. I noticed that I'm always sprinting to the next goal without stopping to breathe, and it takes a mental toll. However, I've found that responding to that
-                        pressure with a moment of gratitude really does help balance that feeling of dread. 
+					That doesn't mean I forgot how to sweat and be tenacious when it comes to my goals. I want to be a better developer, and I want to be a better leader. <strong>I want to be a better person.</strong>
                     </p>
                 </div>
             </div>
