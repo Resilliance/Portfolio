@@ -17,19 +17,28 @@
                     <hr>
                     <br>
                     <h4><strong>Hey there, I'm Justin!</strong></h4>
-					<p>I program things and those things help people...I think</p>                    
+					<p>I love to program cool/fun stuff and I also like to help people :)</p>                    
                 </div>
             </div>
 
             <div class="d-flex flex-column-9 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded h-100 border-success">
-                    <h4>New phone who dis?</h4>
+                    <h4>Who's Justin?</h4>
                     <hr>
                     <p>
-					I build custom Odoo solutions professionally, and I'm an audacious dreamer in my free time. I'm a self-taught developer, and I've been programming for about 2 years now. I currently work with a consulting firm, Captivea, as an <strong>Odoo developer</strong> and <strong>Team Manager</strong>.
+						I'm just a guy, who loves to program, problem solve, and help people. I've been tinkering with computers since I was 5, and built my first PC at 8! I bounced from the med-school track, to physician assistant, mechanical engineering, material science &amp; engineering, BACK to Biology, and finally found out software engineering was my thing!
                     </p>
+					<p>
+						With a heavy conscience I dropped out of the University of Central Florida in October 2021 and began teaching myself how to program after long hours working in the pharmacy. A lot of the stuff I made was small and largely unimpressive to an enterprise or seasoned developer, but it was mine and I was proud of it. For 8 months, I put in the hours after work hoping one day I could land a job that would give me a chance to prove myself. 
+					</p>
+					<p>
+						My mentor and manager at the time, Señor Fernando, kept my spirits high and pushed to keep going despite my faith in myself waning. He always told me "You're one step closer to a yes, son!" and "Small progress is progress, no matter what anyone says." I owe a lot to him and my friends that believed in me when I didn't believe in myself.
+					</p>
+					<p>
+						In May 2022, I got my shot, the Founder &amp; CEO of Captivea, Sebastian Riss, gave me a chance to prove myself and I took it; this was the best 25th birthday present I could have wished for! I've been working at Captivea since then and it's been an exciting rollercoaster of a ride. I've learned so much, met so many amazing people, and as my time with Captivea comes to a close, I'm excited to see what the next part of my life has to show me.
+					</p>
                     <br>
-					<h4>Absolutely <strong>Cracked</strong> (Skills)</h4>
+					<h4>Skills</h4>
 					<div class="row" >
 						<img style="width:75px;height:75px;" src="{% static 'images/git_icon.png' %}"/>
 						<img style="width:75px;height:75px;" src="{% static 'images/docker_icon.png' %}"/>
@@ -67,8 +76,10 @@
                         .grow { transition: all .2s ease-in-out; }
                         .grow:hover { transform: scale(1.1); }
                     </style>
-                    <h4>Experience/Projects 👨🏻‍💻</h4>
+					<h4>Experience/Projects</h4>
                     <hr>
+                    <a class="btn grow shadow" style="background-color: #FF6961; color: #FFFFFF" href="{% url 'recycpal'%}" role="button">Domain Force (Technical Articles/Courses)</a>
+					<br>
                     <a class="btn btn-success grow shadow" href="{% url 'recycpal'%}" role="button">RecycPal (AI Recycling App)</a>
                     <br>
                     <a class="btn btn-secondary grow shadow" href="{% url 'pharmeasy'%}" role="button">PharmEasy (Pharmacy System Software)</a>
@@ -81,20 +92,26 @@
 
             <div class="d-flex flex-column-6 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded border-warning h-100">
-					<h4>But how <strong>E P I C</strong> are you?</h4> 
+					<h4>Cool stuff I've done</h4> 
                     <hr>
-					<p>My mom says I'm pretty epic, but I think she's a little bias. So here's some things not on my resume that I've done.</p>
+						<blockquote>Although these may not be the most <i>spectacular</i> nor <i>complete</i> projects/feats, they are the ones that I'm most proud of.</blockquote>
 					<p>
-					Integrating C++ into Odoo via custom modules to handle the processing of large data sets. 
+						- Made a website, called <a href="https://domain-force.com/">Domain Force</a>, that teaches developers/engineers from any level technical topics that are prevalent in industry.
 					</p>
 					<p>
-					Implement Odoo's tours to <strong>automate testing</strong> for python code/business logic and UI/UX.
+						- Managed to create a module/script that remapped a whole data table of 100,000+ records in Odoo, an ERP system, in under 5 minutes. This was a time in my career where I didn't know SQL and I had to learn it in order to complete the task.
 					</p>
 					<p>
-					Deliver internal talks about deployment of Odoo on docker containers and how to manage multiple docker containers within a given server.
+						- I made RecycPal's AI model, RecycPal is an object detection AI application that's designed to identify trash/recyclable materials, was a huge feat for me, I had no idea what I was doing and I still managed to figure out how to use PyTorch w/ React and PyTorch with Kivy, a python mobile app framework, to create a working prototype. I also taught myself how to program in Kotlin and Swift to create the mobile app versions of RecycPal.
 					</p>
 					<p>
-					Navigate a large codebase to efficiently debug, fix issues, and <strong>bend the software to the client's will.</strong>
+						- Learned how to make a backend server with FastAPI and a mobile frontend with Kotlin (Android) in under a week, without any tutorials or help. Just documentation and a dream.
+					</p>
+					<p>
+						- For a Captivea aerospace project/client, with the guidance of my Business Analyst and Project Manager I created a full-fledged Product Lifecycle Management system in Odoo in under 6 months. This was a huge feat for me, as it was my first project to be acting as 'lead' developer.
+					</p>
+					<p>
+						- I learned Neovim!!! I know it's not a big deal, but it made my job so much more fun and it reminds me of the days when I was in highschool playing Starcraft II with my older brother.  
 					</p>
                 </div>
             </div>
@@ -104,27 +121,26 @@
         <div class="d-flex flex-row">
             <div class="d-flex flex-column-6 pr-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded border-danger h-100">
-                    <h4>What am I currently working on 🤓</h4>
+                    <h4>What am I currently working on?</h4>
                     <hr>
 					<p>
-					When I'm not drowning in work, I try to work on defining my business model for my freshly formed LLC, Napkin Software.
+						Currently trying to build my stamina and mental fortitude to run a half-marathon, and hopefully a full marathon by the end of 2024!
 					</p>
 					<p>
-					I'm also trying to learn more about C++, Rust, and VR for game development, but honestly there's just not enough hours in the day to do everything!
+						Program-wise I'm really pushing to learn more Kotlin, Swift, and C++/C# to be able to make mobile application and games. 
 					</p>
                 </div>
             </div>
 
             <div class="d-flex flex-column-6 pl-3">
                 <div class="card card-body shadow p-3 mb-5 bg-white-rounded border-success h-100">
-                    <h4>Short Term Goals 🐰</h4>
+                    <h4>Short Term Goals</h4>
                     <hr>
                     <p>
-                        Be happier 😌 I'm getting older and so is everyone else in my life, no matter how busy I get I want to prioritize those moments before the people that matter to me leave this 
-                        world we call home. 
+                        Be happier, I'm getting older and so is everyone else in my life, no matter how busy I get I want to prioritize those moments before the people that matter to me leave this world we call home. 
                     </p>
                     <p>
-					That doesn't mean I forgot how to sweat and be tenacious when it comes to my goals. I want to be a better developer, and I want to be a better leader. <strong>I want to be a better person.</strong>
+						Deploy a mobile game on the App Store and Google Play Store, I've always wanted to make a game and I think it's time to make that dream a reality.
                     </p>
                 </div>
             </div>
